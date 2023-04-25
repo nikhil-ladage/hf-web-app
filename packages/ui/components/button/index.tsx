@@ -2,7 +2,7 @@ import { FC } from "react";
 import MUIButton from "@mui/material/Button";
 import { IButtonProps } from "./button.types";
 
-const Button: FC<IButtonProps> = (props) => {
+export const Button: FC<IButtonProps> = (props) => {
 	const {
 		children,
 		className,
@@ -20,4 +20,3 @@ const Button: FC<IButtonProps> = (props) => {
 	);
 };
 
-export default Button;

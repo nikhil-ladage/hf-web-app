@@ -1,0 +1,40 @@
+.carouselBannerWrapper {
+	margin-top: 11.25rem;
+	&:nth-child(0) {
+		margin-bottom: 4rem;
+	}
+}
+
+.carouselItemWrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	min-height: 35.875rem;
+}
+
+.carouselItemContent,
+.carouselItemBgContent {
+	position: absolute;
+}
+
+.carouselItemContent {
+	left: 0;
+	margin: 1rem 6.25rem;
+	padding: 4.875rem 0.625rem 4.875rem 3.625rem;
+	max-width: 37.25rem;
+}
+.carouselItemTitle {
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 3.81rem;
+	font-family: "Aktiv Grotesk Medium", sans-serif;
+}
+
+.carouselItemSubTitle {
+	padding-bottom: 2.5rem;
+	padding-top: 1.25rem;
+	font-size: 1.5rem;
+	letter-spacing: 0;
+	line-height: 2rem;
+	font-family: "Aktiv Grotesk Light", sans-serif;
+}
