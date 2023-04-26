@@ -38,3 +38,78 @@
 	line-height: 2rem;
 	font-family: "Aktiv Grotesk Light", sans-serif;
 }
+
+@media (max-width: 1440px) {
+	.carouselItemContent {
+		max-width: 40vw;
+	}
+}
+
+@media (max-width: 1200px) {
+	.carouselItemContent {
+		margin: 2rem 3rem;
+		padding: 4.875rem 0.625rem 3rem 1rem;
+	}
+	.carouselItemTitle {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+	.carouselItemSubTitle {
+		font-size: 1.25rem;
+		font-family: "Aktiv Grotesk Light", sans-serif;
+	}
+}
+
+@media (max-width: 1024px) {
+	.carouselItemContent,
+	.carouselItemBgContent {
+		position: unset;
+	}
+
+	.carouselItemContent {
+		background-color: #f3f8fd;
+		margin: 0;
+		padding: 2rem;
+		padding-right: 0.625rem;
+		max-width: 100%;
+	}
+	.carouselItemTitle {
+		font-size: 2.25rem;
+		line-height: 3.81rem;
+	}
+	.carouselItemSubTitle {
+		padding-bottom: 2.5rem;
+		padding-top: 1.25rem;
+		font-size: 1.25rem;
+		letter-spacing: 0;
+		line-height: 2rem;
+		font-family: "Aktiv Grotesk Light", sans-serif;
+	}
+}
+
+@media (max-width: 768px) {
+	.carouselBannerWrapper {
+		margin-top: 6.25rem;
+	}
+	.carouselItemTitle {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+	.carouselItemSubTitle {
+		padding-top: 0;
+	}
+	.imageWrapper {
+		width: 100vw;
+		overflow: hidden;
+	}
+	.carouselItemBgContent {
+		min-width: calc(100vw * 1.6);
+		margin: 0px 0px 0px -55vw;
+	}
+}
+
+/*
+.cropped { width: 150px; height: 150px; overflow: hidden; } .cropped img { margin: -150px 0px 0px -150px; }
+
+
+*/

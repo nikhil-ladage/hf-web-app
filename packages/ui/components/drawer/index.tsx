@@ -6,13 +6,14 @@ export const MuiDrawer = () => {
 	return (
 		<>
 			<IconButton
+				className="p-0"
 				size="large"
 				edge="start"
 				color="inherit"
 				aria-label="logo"
 				onClick={() => setIsDrawerOpen(true)}
 			>
-				<MenuIcon />
+				<MenuIcon fontSize="medium" />
 			</IconButton>
 			<Drawer
 				anchor="right"

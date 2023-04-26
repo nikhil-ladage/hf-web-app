@@ -13,6 +13,11 @@ module.exports = {
 				xlarge: { min: "1600px" },
 				xxlarge: { min: "2000px" },
 			},
+			fontFamily: {
+				aktivLight: ["Aktiv Grotesk Light", "sans-serif"],
+				aktivMedium: ["Aktiv Grotesk Medium", "sans-serif"],
+				aktivBold: ["Aktiv Grotesk Bold", "sans-serif"],
+			},
 		},
 	},
 };

@@ -31,7 +31,7 @@ export const SplitPhoto = ({ num }: { num: 1 | 2 }) => {
 						md={6}
 						lg={6}
 						xl={6}
-						className="z-[1] min-h-[585px] xsmall:basis-6/12 grow-0 width-full xsmall:max-w-[50%] box-border items-start flex flex-col justify-center ml-auto m-0 pt-[40px] px-[20px]"
+						className="z-[1] min-h-[585px] xsmall:basis-6/12 grow-0 width-full xsmall:max-w-[50%] box-border items-start flex flex-col justify-center ml-auto m-0  px-[20px]"
 					>
 						<div className="ml-auto small:pl-[60px] small:pr-[65px] small:pt-[92px] small:pb-[50px]">
 							<h2 className="text-[35px] small:text-5xl font-medium leading-[61px]">
@@ -106,7 +106,7 @@ export const SplitPhoto = ({ num }: { num: 1 | 2 }) => {
 						md={6}
 						lg={6}
 						xl={6}
-						className="z-[1] min-h-[585px] xsmall:basis-6/12 grow-0 xsmall:max-w-[50%] w-full box-border items-start flex flex-col justify-center ml-auto m-0 pt-[40px] px-[20px]"
+						className="z-[1] min-h-[585px] xsmall:basis-6/12 grow-0 xsmall:max-w-[50%] w-full box-border items-start flex flex-col justify-center ml-auto m-0 px-[20px]"
 					>
 						<div className="ml-auto small:pl-[60px] small:pr-[65px] small:pt-[92px] small:pb-[50px]">
 							<h2 className="small:text-5xl font-medium leading-[61px] text-[35px]">

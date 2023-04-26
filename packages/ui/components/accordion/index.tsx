@@ -11,9 +11,9 @@ const Accordion: FC<AccordionProps> = (props) => {
 	return (
 		<MUIAccordion>
 			<AccordionSummary expandIcon={<ExpandMoreIcon />}>
-				<Typography>{title}</Typography>
+				<Typography className="font-aktivBold">{title}</Typography>
 			</AccordionSummary>
-			<AccordionDetails>{children}</AccordionDetails>
+			<AccordionDetails >{children}</AccordionDetails>
 		</MUIAccordion>
 	);
 };

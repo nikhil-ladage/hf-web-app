@@ -40,10 +40,10 @@ export const CountryMenu = () => {
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
-                className=' px-[24px] py-[6px] flex flex-row items-center gap-2.5'
+                className=' px-6 py-2 flex flex-row items-center gap-2.5'
             >
-                <Image alt='' width={17} height={16} src={"https://hydrafacialemea.com/wp-content/uploads/2023/03/world.svg"} />
-                <span className='text-black font-[900]'
+                <Image alt='' width={16} height={17} src={"https://hydrafacialemea.com/wp-content/uploads/2023/03/world.svg"} />
+                <span className='text-black font-aktivBold'
                 >US & CANADA</span>
                 {open && <div style={{
 

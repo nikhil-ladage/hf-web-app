@@ -8,6 +8,7 @@ import {
 	MuiDrawer,
 	Navbar,
 	Footer,
+	CountryMenu,
 } from "ui";
 
 import { HOME_TAB_ROUTES } from "../common/routes";
@@ -19,23 +20,32 @@ export default function En() {
 			<div>
 				<Navbar
 					isFixed={true}
-					customClass="bg-white top-0 left-0 flex justify-between px-[1.25rem] pt-[0.513rem] small:pt-[1.563rem] small:px-[2.125rem] pb-[4rem] medium:px-[10.313rem] medium:pt-[3.813rem]"
+					rootClass="top-0 left-0"
+					customClass="
+					h-[58px] xsmall:h-[62px] small:h-[98px]
+					flex justify-between 
+					py-[13px] px-[20px]
+					small:py-[25px] small:px-[34px] 
+					medium:px-[165px] medium:pt-[61px] medium:pb-[32px]"
 				>
 					<div className="flex items-center">
 						<div>
 							<img
 								src="https://www.hydrafacial.com/static/media/hydrafacial.2cb729122ebed9b1fdf89ac3c87c334a.svg"
-								className="w-[7.875rem] small:w-[14rem]"
+								className="w-[126px] small:w-[160px]"
 							/>
 						</div>
-					</div>
-					<div className="items-center text-[.813rem] text-[rgba(0,0,0,.5)] hidden small:flex">
-						<div className="flex px-4">
-							<img src="https://www.hydrafacial.com/static/media/search.998b0144c146a3004de3561ad091c713.svg" />
-							<p className="font-medium">SEARCH</p>
+						<div className="hidden xsmall:block">
+							<CountryMenu />
 						</div>
-						<div className="pl-4 whitespace-nowrap">
-							<p className="font-medium">FOR PROFESSIONAL</p>
+					</div>
+					<div className="items-center text-[13px] text-[rgba(0,0,0,.5)] hidden small:flex">
+						<div className="flex px-3 items-center p-1">
+							<img src="https://www.hydrafacial.com/static/media/search.998b0144c146a3004de3561ad091c713.svg" className="w-5 h-5" />
+							<a className="font-aktivLight">SEARCH</a>
+						</div>
+						<div className="pl-3 whitespace-nowrap">
+							<a className="font-aktivLight p-1">FOR PROFESSIONALS</a>
 						</div>
 					</div>
 					<div className="small:hidden">
@@ -45,8 +55,9 @@ export default function En() {
 
 				<Navbar
 					isFixed={true}
+					rootClass={"top-[6rem]"}
 					customClass={
-						"flex justify-between text-xl hidden small:flex small:px-[10.313rem] top-[8rem]"
+						"flex justify-between text-xl hidden small:flex px-[195px] pb-[100px] medium:px-[165px] medium:pb-[65px]"
 					}
 				>
 					{HOME_TAB_ROUTES.map((item): any => {
@@ -71,7 +82,9 @@ export default function En() {
 			</Container>
 			<LogoGrid />
 			<FindAHydrafacialist />
-			<Footer />
+			<div className="medium:flex medium:justify-center">
+				<Footer />
+			</div>
 		</>
 	);
 }

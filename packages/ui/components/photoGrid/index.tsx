@@ -22,7 +22,7 @@ export const PhotoGrid = () => {
         },
     ];
     return (
-        <div className="py-[40px] small:py-24">
+        <div className="py-[40px] small:py-24 flex flex-col max-w-[1440px] mx-auto">
             <div className="flex flex-row items-center justify-center  ">
                 <h2 className="text-[35px] text-center leading-10">
                     Facials Are Just the Beginning

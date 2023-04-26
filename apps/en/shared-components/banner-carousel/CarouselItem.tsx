@@ -1,15 +1,15 @@
-import { Button } from "ui";
 import styles from "./Carousel.module.scss";
-import Image from "next/image";
 
 const CarouselItem = ({ item }) => {
 	return (
 		<div className={styles.carouselItemWrapper}>
-			<img
-				src={item?.bgContent}
-				alt={""}
-				className={`${styles.carouselItemBgContent}`}
-			/>
+			<div className={styles.imageWrapper}>
+				<img
+					src={item?.bgContent}
+					alt={""}
+					className={`${styles.carouselItemBgContent}`}
+				/>
+			</div>
 			<div className={`${styles.carouselItemContent}`}>
 				<div className={styles.carouselItemTitle}>{item?.title}</div>
 				<div className={styles.carouselItemSubTitle}>
@@ -35,9 +35,9 @@ const CarouselItem = ({ item }) => {
 				tracking-wider 
 				leading-[26px] 
 				uppercase 
+				w-full
+				xsmall:max-w-[21rem]
 				no-underline 
-				min-w-[64px] 
-				mt-[30px] 
 				m-0 
 				xsmall:px-[61.5px] 
 				px-[30px]

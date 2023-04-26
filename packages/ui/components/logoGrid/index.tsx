@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 
 export const LogoGrid = () => {
 	return (
-		<div className="py-[40px] bg-[#f3f8fd] text-[#000] small:px-[90px]">
+		<div className="py-[40px] bg-[#f3f8fd] text-[#000] small:py-[90px]">
 			<div className="px-[20px] max-w-[1440px] m-auto small:px-[165px]">
 				<h2 className="xsmall:pb-[80px] pb-[30px] xsmall:mb-[17px] mb-[15px] text-center text-[] xsmall:text-5xl leading-[61px] text-[35px]">
 					Brands You’ll Love
