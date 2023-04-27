@@ -1,3 +1,5 @@
+import BannerCarousel from "../shared-components/banner-carousel";
+import NavbarCommonContent from "ui/components/navbar-common-content";
 import {
 	Container,
 	FindAHydrafacialist,
@@ -5,14 +7,12 @@ import {
 	Milestone,
 	PhotoGrid,
 	SplitPhoto,
-	MuiDrawer,
 	Navbar,
 	Footer,
-	CountryMenu,
+	Button,
 } from "ui";
-
 import { HOME_TAB_ROUTES } from "../common/routes";
-import BannerCarousel from "../shared-components/banner-carousel";
+import styles from "ui/components/button/styles";
 
 export default function En() {
 	return (
@@ -28,31 +28,17 @@ export default function En() {
 					small:py-[25px] small:px-[34px] 
 					medium:px-[165px] medium:pt-[61px] medium:pb-[32px]"
 				>
-					<div className="flex items-center">
-						<div>
-							<img
-								src="https://www.hydrafacial.com/static/media/hydrafacial.2cb729122ebed9b1fdf89ac3c87c334a.svg"
-								className="w-[126px] small:w-[160px]"
-							/>
-						</div>
-						<div className="hidden xsmall:block">
-							<CountryMenu />
-						</div>
-					</div>
-					<div className="items-center text-[13px] text-[rgba(0,0,0,.5)] hidden small:flex">
-						<div className="flex px-3 items-center p-1">
-							<img src="https://www.hydrafacial.com/static/media/search.998b0144c146a3004de3561ad091c713.svg" className="w-5 h-5" />
-							<a className="font-aktivLight">SEARCH</a>
-						</div>
-						<div className="pl-3 whitespace-nowrap">
-							<a className="font-aktivLight p-1">FOR PROFESSIONALS</a>
-						</div>
-					</div>
-					<div className="small:hidden">
-						<MuiDrawer />
-					</div>
+					<NavbarCommonContent />
 				</Navbar>
-
+				<Button
+					className={`${styles.styleSolid} flex w-[100%] z-20 fixed top-[3.5rem] font-aktivMedium text-xl small:hidden `}
+				>
+					<div className="flex justify-between items-start">
+						<div className="font-aktivMedium text-xl">
+							FIND A HYDRAFACIALITS
+						</div>
+					</div>
+				</Button>
 				<Navbar
 					isFixed={true}
 					rootClass={"top-[6rem]"}
@@ -62,14 +48,13 @@ export default function En() {
 				>
 					{HOME_TAB_ROUTES.map((item): any => {
 						return (
-							<>
-								<div key={item.id}>{item.name}</div>
-							</>
+							<div key={item.id}>{item.name}</div>
 						);
 					})}
 				</Navbar>
 			</div>
 			<BannerCarousel />
+
 			<Container>
 				<Milestone />
 			</Container>

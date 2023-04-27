@@ -91,6 +91,9 @@
 	.carouselBannerWrapper {
 		margin-top: 6.25rem;
 	}
+	.carouselItemContent {
+		padding: 2.5rem 1.25rem;
+	}
 	.carouselItemTitle {
 		font-size: 2.25rem;
 		line-height: 2.5rem;
@@ -105,6 +108,10 @@
 	.carouselItemBgContent {
 		min-width: calc(100vw * 1.6);
 		margin: 0px 0px 0px -55vw;
+	}
+
+	.ctaLinkButton {
+		width: 100%;
 	}
 }
 

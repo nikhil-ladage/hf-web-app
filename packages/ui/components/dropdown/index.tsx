@@ -72,7 +72,10 @@ export const CountryMenu = () => {
             >
                 {countryMenu.map((country, index) => {
                     return (
-                        <MenuItem key={index} onClick={handleClose} className='flex flex-row gap-2 items-center justify-start w-[150px] hover:border-l-4 hover:border-solid hover:border-[#4493c7] border-l-4 border-solid border-transparent'>
+                        <MenuItem key={index} onClick={handleClose} className='
+                        flex flex-row gap-2 items-center justify-start
+                        hover:border-l-4 hover:border-solid hover:border-[#4493c7] 
+                        border-l-4 border-solid border-transparent'>
                             <span>
                                 <Image alt='' width={23} height={17} src={country.image} />
                             </span>

@@ -18,7 +18,7 @@ const RCarousel = (props: RCarouselProps) => {
 			{...rest}
 			indicatorContainerProps={{
 				style: {
-					padding: "2rem 0"
+					margin: "2rem 0"
 				},
 			}}
 		>

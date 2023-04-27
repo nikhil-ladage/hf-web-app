@@ -1,31 +1,19 @@
-import { useState } from "react";
-import { Drawer, Box, Typography, IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-export const MuiDrawer = () => {
-	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+import TransitionWrapper from "../transitionWrapper";
+import { IDrawerProps } from "./drawer.types";
+import "./drawer.css";
+
+const Drawer = (props: IDrawerProps) => {
+	const { children, isOpen } = props;
+
 	return (
 		<>
-			<IconButton
-				className="p-0"
-				size="large"
-				edge="start"
-				color="inherit"
-				aria-label="logo"
-				onClick={() => setIsDrawerOpen(true)}
-			>
-				<MenuIcon fontSize="medium" />
-			</IconButton>
-			<Drawer
-				anchor="right"
-				open={isDrawerOpen}
-				onClose={() => setIsDrawerOpen(false)}
-			>
-				<Box p={2} width="w-60" textAlign="center" role="presentation">
-					<Typography variant="h6" component="div">
-						Side Panel
-					</Typography>
-				</Box>
-			</Drawer>
+			<TransitionWrapper open={isOpen} animationClassName="drawer">
+				<div className="drawer">
+					<div>{children}</div>
+				</div>
+			</TransitionWrapper>
 		</>
 	);
 };
+
+export default Drawer;

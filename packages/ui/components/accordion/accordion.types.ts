@@ -1,6 +1,5 @@
-import { ReactNode } from "react";
+import { AccordionProps } from "@mui/material/Accordion";
 
-export type AccordionProps = {
-	title: string;
-	children: ReactNode;
-};
+export interface IAccordionProps extends AccordionProps {
+	title?: string;
+}

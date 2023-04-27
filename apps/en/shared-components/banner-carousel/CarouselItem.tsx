@@ -17,31 +17,7 @@ const CarouselItem = ({ item }) => {
 				</div>
 				{!!item?.CTA && (
 					<a
-						className="
-				whitespace-normal 
-				inline-flex 
-				items-center 
-				justify-center 
-				relative 
-				box-border 
-				cursor-pointer 
-				select-none 
-				align-middle 
-				appearance-none 
-				bg-[initial] 
-				border text-[#147bd1] 
-				text-xl 
-				font-medium 
-				tracking-wider 
-				leading-[26px] 
-				uppercase 
-				w-full
-				xsmall:max-w-[21rem]
-				no-underline 
-				m-0 
-				xsmall:px-[61.5px] 
-				px-[30px]
-				py-[18px] rounded-none border-solid border-[#147bd1]"
+						className={["whitespace-normal inline-flex items-center justify-center relative box-border cursor-pointer select-none align-middle appearance-none bg-[initial] border text-[#147bd1] text-xl font-medium tracking-wider leading-[26px] uppercase no-underline m-0 xsmall:px-[61.5px] px-[30px] py-[18px] rounded-none border-solid border-[#147bd1]", styles.ctaLinkButton].join(" ")}
 						tabIndex={0}
 						href="/device/"
 					>
